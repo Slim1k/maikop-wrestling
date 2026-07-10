@@ -8,11 +8,25 @@
 </head>
 <body>
 
-     <!-- Главный баннер с логотипом -->
+    <!-- Навигационное меню -->
+    <nav class="top-nav">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-badge">⛩</span> ШУАЙЦЗЯО <span class="logo-city">МАЙКОП</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html" class="active">Главная</a>
+                <a href="history.html">История</a>
+                <a href="tournaments.html">Соревнования</a>
+                <a href="training.html">Тренировки</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Главный баннер -->
     <header class="hero">
         <div class="hero-overlay"></div>
         <div class="container hero-content">
-            <!-- Блок логотипа -->
             <div class="logo-container">
                 <img src="images/shuaijiao.jpg" alt="Логотип Шуайцзяо Майкоп" class="site-logo">
             </div>
@@ -23,76 +37,127 @@
     </header>
 
     <main class="container">
-        <!-- Секция: Особенности -->
+        <!-- Секция: Особенности стиля -->
         <section id="about">
-            <h2 class="section-title">Особенности стиля</h2>
+            <h2 class="section-title">Что такое Шуайцзяо?</h2>
+            <p class="cards-hint">На ПК: наведите для подробностей. На телефоне: нажмите на карточку.</p>
+            
             <div class="cards-grid">
-                <div class="card">
-                    <h3>Экипировка «Ку»</h3>
-                    <p>Борьба в прочных куртках с коротким рукавом. Разрешены жесткие захваты для проведения мощных бросков.</p>
+                
+                <!-- Карточка 1 -->
+                <div class="card-wrapper">
+                    <input type="checkbox" id="card1-trigger" class="card-trigger">
+                    <label for="card1-trigger" class="card">
+                        <h3>Крепкая куртка</h3>
+                        <p>Специальная форма, которая защищает тело от ушибов и помогает делать броски.</p>
+                        <span class="more-link">Подробнее →</span>
+                    </label>
+                    <div class="modal-overlay">
+                        <div class="modal-content">
+                            <label for="card1-trigger" class="modal-close">&times;</label>
+                            <img src="images/forma.jpg" alt="Крепкая куртка" class="modal-img">
+                            <h4>Форма для занятий</h4>
+                            <div class="text-pc">
+                                <p>Версия для ПК: Мы тренируемся в плотных хлопковых куртках с короткими рукавами. Такую форму невозможно порвать даже при очень сильных рывках. На занятиях вы научитесь правильно держать соперника за одежду и пояс, чтобы уверенно контролировать его и безопасно выполнять приемы.</p>
+                            </div>
+                            <div class="text-mobile">
+                                <p>Мобильная версия: Это прочная куртка из толстой ткани. Она защищает кожу во время захватов и не рвется. За нее удобно держать соперника, чтобы сделать бросок.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="card">
-                    <h3>Без партера</h3>
-                    <p>Поединок идет только в стойке. Задача — мгновенно повалить соперника и самому остаться на ногах.</p>
+
+                <!-- Карточка 2 -->
+                <div class="card-wrapper">
+                    <input type="checkbox" id="card2-trigger" class="card-trigger">
+                    <label for="card2-trigger" class="card">
+                        <h3>Борьба только стоя</h3>
+                        <p>Динамичные поединки. Здесь не возятся на полу и нет опасных удушений.</p>
+                        <span class="more-link">Подробнее →</span>
+                    </label>
+                    <div class="modal-overlay">
+                        <div class="modal-content">
+                            <label for="card2-trigger" class="modal-close">&times;</label>
+                            <img src="images/brosok.jpg" alt="Борьба в стойке" class="modal-img">
+                            <h4>Никакого партера</h4>
+                            <div class="text-pc">
+                                <p>Версия для ПК: В шуайцзяо полностью отсутствует борьба лежа на полу. Как только один из участников падает или касается ковра рукой или коленом — поединок останавливается судейским свистком. Смысл очень простой: нужно чисто повалить соперника, но самому остаться на ногах.</p>
+                            </div>
+                            <div class="text-mobile">
+                                <p>Мобильная версия: У нас борются только на ногах. Если кто-то упал или коснулся пола рукой — раунд окончен. Побеждает тот, кто бросил соперника и устоял сам.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="card">
-                    <h3>Инерция и ум</h3>
-                    <p>Философия строится на перенаправлении силы атакующего. Вы используете вес противника против него самого.</p>
+
+                <!-- Карточка 3 -->
+                <div class="card-wrapper">
+                    <input type="checkbox" id="card3-trigger" class="card-trigger">
+                    <label for="card3-trigger" class="card">
+                        <h3>Ловкость вместо силы</h3>
+                        <p>Учимся побеждать за счет ума, используя вес и скорость нападающего.</p>
+                        <span class="more-link">Подробнее →</span>
+                    </label>
+                    <div class="modal-overlay">
+                        <div class="modal-content">
+                            <label for="card3-trigger" class="modal-close">&times;</label>
+                            <img src="images/brosok.jpg" alt="Техника Шуайцзяо" class="modal-img">
+                            <h4>Техника и хитрость</h4>
+                            <div class="text-pc">
+                                <p>Версия для ПК: Вам не обязательно быть сильнее или тяжелее соперника. Главный принцип этой борьбы — использовать силу нападающего против него самого. Если соперник сильно толкает вас — вы плавно тянете его за собой, если он бежит вперед — вы делаете легкую подсечку на опережение.</p>
+                            </div>
+                            <div class="text-mobile">
+                                <p>Мобильная версия: Сила — не главное. Мы учимся подлавливать соперника на его же ошибках: когда он толкает, мы просто уводим его движение в сторону и делаем подножку.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- БЛОК: ТРЕНИРОВКИ В МАЙКОПЕ -->
-        <section id="maikop-classes" class="info-section city-section">
-            <h2>Занятия в Майкопе</h2>
-            <p class="section-desc">Приглашаем мужчин, женщин и детей от 8 лет. Уровень физической подготовки не имеет значения — обучаем базовым техникам страховки и бросков с нуля.</p>
+        <!-- Блок занятий в Майкопе -->
+        <section id="maikop-classes" class="classes-section">
+            <h2 class="section-title">Занятия в Майкопе</h2>
+            <p class="classes-subtitle">Приглашаем мужчин, женщин и детей от 8 лет. Специальная подготовка не нужна — всему научим с нуля!</p>
             
-            <div class="schedule-grid">
-                <div class="schedule-box">
-                    <h4>Расписание занятий</h4>
-                    <ul>
-                        <li><strong>Вторник:</strong> 18:30 — 20:00</li>
-                        <li><strong>Четверг:</strong> 18:30 — 20:00</li>
-                        <li><strong>Суббота:</strong> 16:00 — 17:30</li>
-                    </ul>
+            <div class="classes-container">
+                <div class="classes-card schedule-card-box">
+                    <div class="card-header-icon">📅</div>
+                    <h3>Расписание тренировок</h3>
+                    <div class="schedule-timeline">
+                        <div class="timeline-day"><span class="day-name">Вторник</span><span class="day-time">18:30 — 20:30</span></div>
+                        <div class="timeline-day"><span class="day-name">Четверг</span><span class="day-time">18:30 — 20:30</span></div>
+                        <div class="timeline-day"><span class="day-name">Суббота</span><span class="day-time">16:00 — 18:00</span></div>
+                    </div>
                 </div>
-                <div class="schedule-box">
-                    <h4>Что взять на первую тренировку?</h4>
-                    <ul>
-                        <li>Спортивные штаны или шорты</li>
-                        <li>Обычная футболка</li>
-                        <li>Сменная обувь на мягкой подошве (борцовки/кеды)</li>
+
+                <div class="classes-card equipment-card-box">
+                    <div class="card-header-icon">👟</div>
+                    <h3>Что взять на первую тренировку?</h3>
+                    <p class="equip-notice">Начать можно в самой обычной спортивной форме:</p>
+                    <ul class="equip-list">
+                        <li><span class="check-mark">✓</span><div><strong>Любые спортивные штаны</strong><br><small>Главное, чтобы они были свободными и без острых замков</small></div></li>
+                        <li><span class="check-mark">✓</span><div><strong>Обычная футболка</strong><br><small>Желательно из плотной ткани, которую не жалко</small></div></li>
+                        <li><span class="check-mark">✓</span><div><strong>Сменная обувь</strong><br><small>Чистые кеды, кроссовки или борцовки на мягкой подошве</small></div></li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <!-- БЛОК: КОНТАКТЫ -->
-        <section id="contacts" class="info-section contacts-section">
+        <!-- Блок контактов -->
+        <section id="contacts" class="info-section">
             <h2>Контакты и запись</h2>
-            <p class="section-desc">Свяжитесь с нами удобным способом, чтобы забронировать место в группе или задать вопрос тренеру.</p>
-            
+            <p class="section-desc">Напишите или позвоните нам, чтобы забронировать место на бесплатную пробную тренировку.</p>
             <div class="contacts-grid">
-                <div class="contact-item">
-                    <span class="icon">📍</span>
-                    <p><strong>Адрес зала:</strong><br>г. Майкоп, ул. Краснооктябрьская, д. 25 (Спортивный комплекс)</p>
-                </div>
-                <div class="contact-item">
-                    <span class="icon">📞</span>
-                    <p><strong>Телефон:</strong><br><a href="tel:+79000000000">+7 (900) 000-00-00</a></p>
-                </div>
-                <div class="contact-item">
-                    <span class="icon">💬</span>
-                    <p><strong>Мессенджеры:</strong><br><a href="#" class="social-link">Telegram</a> / <a href="#" class="social-link">WhatsApp</a></p>
-                </div>
+                <div class="contact-item"><span class="icon">📍</span><p><strong>Где мы находимся:</strong><br>г. Майкоп, ул. Краснооктябрьская, д. 25 (Здание Спорткомплекса)</p></div>
+                <div class="contact-item"><span class="icon">📞</span><p><strong>Телефон тренера:</strong><br><a href="tel:+79000000000">+7 (900) 000-00-00</a></p></div>
+                <div class="contact-item"><span class="icon">💬</span><p><strong>Быстрая связь:</strong><br><a href="#" class="social-link">Telegram</a> / <a href="#" class="social-link">WhatsApp</a></p></div>
             </div>
         </section>
     </main>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2026 Шуайцзяо Майкоп. Официальный информационный ресурс секции.</p>
-        </div>
+        <div class="container"><p>&copy; 2026 Шуайцзяо Майкоп. Официальный информационный ресурс секции.</p></div>
     </footer>
 
 </body>
